@@ -10,13 +10,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <NavbarComponent/>
-          <main className="d-flex justify-content-center">
+          <>
             <Routes>
               <Route path="/" element={<Home/>}/>
               <Route path="/work" element={<Work/>}/>
               <Route path="/education" element={<Education/>}/>
             </Routes>
-          </main>
+          </>
       </BrowserRouter>
       <Footer/>
     </div>
